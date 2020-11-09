@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Buttons/ButtonIcon.dart';
 import 'Buttons/Button.dart';
 import 'Buttons/ButtonRow.dart';
 
@@ -17,7 +18,8 @@ KeyBoard(
 			ButtonRow(
 				Buttons: [
 					Button.big(param: "Clear",colorButton: Colors.blue, press: press),
-					Button(param: "<-", colorButton: Colors.blueAccent, press: press),
+					ButtonIcon(param: "<-", press: press),
+					// Button(param: "<-", colorButton: Colors.blueAccent, press: press),
 					Button(param: "+", colorButton: Colors.blueGrey, press: press),
 				],
 			),

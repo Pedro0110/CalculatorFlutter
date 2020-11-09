@@ -7,19 +7,20 @@ final Color colorButton;
 final bool big;
 final void Function(String) press;
 
-Button({
-	@required this.param,
-	this.colorButton = Colors.white,
-	this.big = false,
-	@required this.press
-});
+	Button({
+		@required this.param,
+		this.colorButton = Colors.white,
+		this.big = false,
+		@required this.press
+	});
 
-Button.big({
-	@required this.param,
-	this.colorButton = Colors.white,
-	this.big = true,
-	@required this.press
-});
+	Button.big({
+		@required this.param,
+		this.colorButton = Colors.white,
+		this.big = true,
+		@required this.press
+	});
+
 	@override
 	Widget build(BuildContext context) {
 		return Expanded(
